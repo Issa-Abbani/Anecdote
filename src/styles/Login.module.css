@@ -1,0 +1,183 @@
+:root{
+  background-color: white;
+  user-select: none;
+}
+
+.logoSec{
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  user-select: none;
+}
+
+
+.login_bg{
+  width: 100%;;
+  height: 100%;
+}
+
+.circles{
+  position: absolute;
+  left: -40%;
+  bottom: -50%;
+  top: 80%;
+  z-index: 999;
+}
+
+
+h1{
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  font-size: 4rem;
+  user-select: none;
+  color: white;
+}
+
+.form{
+  width: 40vw;
+  height: 20vh;
+  position: absolute;
+  right: 0%;
+  top: 10%;
+  text-align: center;
+}
+
+.signNav{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.signBtn{
+  background-color: #2E6EE2;
+  width: 10vw;
+  height: 6vh;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.signBtn:hover{
+  box-shadow: 0 5px 10px #00000037;
+}
+
+/* For Larger Tablets */
+
+@media screen and (max-width: 1024px){
+  .logoSec {
+    width: 40%;
+  }
+
+  .form{
+  width: 60vw;
+  height: 20vh;
+  position: absolute;
+  right: 0%;
+  top: 10%;
+  text-align: center;
+  }
+}
+
+/* Media Queries for Tablets */
+@media screen and (max-width: 768px) {
+  .logoSec {
+    width: 40%;
+  }
+
+  .form {
+    width: 50vw;
+    top: 5%;
+  }
+
+  h1 {
+    font-size: 3rem;
+    top: 15%;
+    left: 15%;
+  }
+
+  .signNav {
+    gap: 0.5rem;
+  }
+
+  .signBtn {
+    width: 15vw;
+    font-size: 1rem;
+  }
+}
+
+/* Media Queries for Mobile Phones */
+@media screen and (max-width: 480px) {
+  .logoSec {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .login_bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+
+  .circles {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .form {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    padding: 2rem;
+  }
+
+  .signNav {
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .signBtn {
+    width: 40%;
+    height: 45px;
+    font-size: 1rem;
+    background-color: #2E6EE2;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    transition: .2s;
+  }
+
+  .signBtn:active {
+    transform: scale(0.95);
+  }
+}
