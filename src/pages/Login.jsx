@@ -23,8 +23,8 @@ return (
     ):(
     <aside className={styles.form}>
       <div className={styles.signNav}>
-        <button className={styles.signBtn} onClick={() => setIsUser(true)}>Sign In</button>
-        <button className={styles.signBtn} onClick={() => setIsUser(false)}>Sign Up</button>
+        <button className={`${styles.signBtn} ${(isUser) ? styles.active : ""}`} onClick={() => setIsUser(true)}>Sign In</button>
+        <button className={`${styles.signBtn} ${(!isUser) ? styles.active : ""}`} onClick={() => setIsUser(false)}>Sign Up</button>
       </div>
       {isUser ? (
         <SignIn onForget = {forgetPassword} />

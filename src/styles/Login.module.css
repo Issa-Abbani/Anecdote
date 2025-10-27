@@ -53,14 +53,21 @@ h1{
 }
 
 .signBtn{
-  background-color: #2E6EE2;
+  background-color: transparent;
+  color: #9006FD;
   width: 10vw;
   height: 6vh;
   border-radius: 20px;
-  border: none;
+  border: 1px solid #9006FD;
   font-size: 1.1rem;
   cursor: pointer;
-  transition: .2s;
+  transition: .2s ease-in-out;
+}
+
+.signBtn.active{
+  background-color: #2E6EE2;
+  border: none;
+  color: white;
 }
 
 .signBtn:hover{
