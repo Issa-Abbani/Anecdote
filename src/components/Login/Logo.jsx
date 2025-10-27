@@ -7,7 +7,7 @@ function Logo(){
     <section className={styles.logoSec}>
         <img src={Background} alt='Error' className={styles.login_bg}></img>
         <img src={circles} alt='error' className={styles.circles}></img>
-      <h1>Logo</h1>
+      <h1 className={styles.myLogo}>Logo</h1>
     </section>
   )
 }
