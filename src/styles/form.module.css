@@ -121,14 +121,15 @@ form input{
 /* Media Queries for Mobile Phones */
 @media screen and (max-width: 480px) {
   .intro {
-    margin-top: 2rem;
+    margin-top: 0rem;
     margin-bottom: 2rem;
   }
 
   .intro h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: white;
     margin-bottom: 1rem;
+    line-height: 2;
   }
 
   .intro > p {
