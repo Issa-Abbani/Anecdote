@@ -188,9 +188,9 @@ h1{
     height: 45px;
     font-size: 1rem;
     background-color: transparent;
-    color: #9006FD;
+    color: white;
     border-radius: 25px;
-    border: 1px solid #9006FD;
+    border: 1px solid white;
     transition: .2s ease-in-out;
     user-select: none;
   }
