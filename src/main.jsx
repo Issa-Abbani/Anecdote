@@ -5,13 +5,18 @@ import './index.css'
 import Login from './pages/Login.jsx';
 import Home from './pages/Home.jsx';
 import App from './App.jsx'
+import Courses from './pages/Courses.jsx';
 
 const router = createBrowserRouter([
   {
     element: <App />,
     children: [
       { path: "/", element: <Login /> },
-      { path: "/courses", element: <Home /> }
+      { 
+        element: <Home />, 
+        children:[
+        {path: "/courses", element: <Courses />},
+      ] }
     ],
   },
 ]);
