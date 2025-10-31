@@ -1,6 +1,6 @@
 import Background from '../../assets/Bg.png';
 import circles from '../../assets/Group 2.png'
-import styles from '../../styles/Login.module.css';
+import styles from './Login.module.css';
 
 function Logo(){
   return(

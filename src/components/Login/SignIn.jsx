@@ -1,4 +1,4 @@
-import styles from '../../styles/form.module.css';
+import styles from './form.module.css';
 
 function SignIn(props){
 return (

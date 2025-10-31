@@ -1,5 +1,5 @@
 import Logo from "../components/Login/Logo.jsx";
-import styles from '../styles/Login.module.css';
+import styles from '../components/Login/Login.module.css';
 import SignIn from "../components/Login/SignIn.jsx";
 import SignUp from "../components/Login/SignUp.jsx";
 import Recovery from "../components/Login/Recovery.jsx";

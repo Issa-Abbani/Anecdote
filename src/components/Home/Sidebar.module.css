@@ -1,0 +1,72 @@
+.sideBar{
+  border: none;
+  box-shadow: 0px 5px 10px rgba(76, 76, 76, 0.59);
+  width: 20vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  text-align: start;
+  padding-left: 1vw;
+}
+
+.logo{
+  font-size: 3rem;
+  color: black;
+  font-weight: bold;
+}
+
+.UserBlockCont{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(218, 218, 218, 0.451);
+  margin-left: -3vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.UserBlockCont > img{
+  border-radius: 50%;
+  border: 1px solid grey;
+  width: 25%;
+  height: 25%;
+}
+
+.userInfoCont > h2{
+  color: var(--primary-blue);
+}
+
+.userInfoCont{
+  line-height: 0.8;
+}
+
+.sideNav{
+  margin-top: 5vh;
+  line-height: 4;
+}
+.sideNav > ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.sideNav > ul li{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 10vw;
+  height: 5vh;
+  gap: 1.5vw;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 480px){
+  .sideBar{
+    transform: translateX(-100vw);
+  }
+}

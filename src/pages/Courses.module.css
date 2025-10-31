@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-purple);
+}
+
+.createBtn {
+  padding: 6px 16px;
+  border: 1px solid var(--primary-purple);
+  color:  var(--primary-purple);
+  border-radius: 20px;
+  font-size: 0.875rem;
+  background: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.createBtn:hover {
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 2rem;
+}
