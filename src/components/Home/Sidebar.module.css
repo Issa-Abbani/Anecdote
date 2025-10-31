@@ -1,5 +1,6 @@
 .sideBar{
   border: none;
+  background-color: white;
   box-shadow: 0px 5px 10px rgba(76, 76, 76, 0.59);
   width: 20vw;
   position: fixed;
@@ -8,6 +9,8 @@
   bottom: 0;
   text-align: start;
   padding-left: 1vw;
+  overflow: hidden;
+  margin-right: 20vw;
 }
 
 .logo{
@@ -28,7 +31,7 @@
 
 .UserBlockCont > img{
   border-radius: 50%;
-  border: 1px solid grey;
+  border: 1px solid var(--primary-blue);
   width: 25%;
   height: 25%;
 }
@@ -58,7 +61,8 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  width: 10vw;
+  width: clamp(15vw, 25vw, 50vw);
+  font-size: clamp(0.8rem, 1rem, 5rem);
   height: 5vh;
   gap: 1.5vw;
   cursor: pointer;
@@ -69,4 +73,63 @@
   .sideBar{
     transform: translateX(-100vw);
   }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+  .sideBar{
+    width: 30vw;
+  }
+
+  .UserBlockCont{
+    flex-direction: column;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 35vw;
+  }
+
+  .UserBlockCont > img{
+    border-radius: 50%;
+    border: 1px solid var(--primary-blue);
+    width: 25%;
+    height: 25%;
+  }
+
+  .sideNav > ul li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 6vh;
+    gap: 1.5vw;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+  .UserBlockCont{
+    flex-direction: column;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 25vw;
+  }
+
+  .UserBlockCont > img{
+    border-radius: 50%;
+    border: 1px solid var(--primary-blue);
+    width: 20%;
+    height: 20%;
+  }
+
+  .sideNav > ul li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 20vw;
+    height: 6vh;
+    gap: 1.5vw;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
 }

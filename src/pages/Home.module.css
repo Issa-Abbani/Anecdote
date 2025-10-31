@@ -1,8 +1,41 @@
-.mainCont{
+.tabCont{
   margin-left: 20vw;
 }
 
-.content{
-  background-color: rebeccapurple;
-  width: 80vw;
+
+@media screen and (max-width: 479px){
+  .tabCont{
+    margin-left: 10vw;
+  }
 }
+
+@media screen and (max-width: 479px){
+  .tabCont{
+    margin-left: 10vw;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+  .tabCont{
+    margin-left: 30vw;
+  }
+}
+
+@media screen and (min-width: 1500px){
+  .tabCont{
+    margin-left: 15vw;
+  }
+}
+
+@media screen and (min-width: 1900px){
+  .tabCont{
+    margin-left: 5vw;
+  }
+}
+
+@media screen and (min-width: 2400px){
+  .tabCont{
+    margin-left: 0vw;
+  }
+}
+

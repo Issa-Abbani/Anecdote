@@ -5,7 +5,9 @@ function Home(){
   return(
     <main className={styles.mainCont}>
       <Sidebar />
-      <Outlet />
+      <aside className={styles.tabCont}>
+        <Outlet />
+      </aside>
     </main>
   )
 }
