@@ -89,6 +89,13 @@ h1{
   top: 10%;
   text-align: center;
   }
+
+  .signBtn {
+    width: 20vw;
+    height: 4vh;
+    font-size: 1rem;
+    
+  }
 }
 
 /* Media Queries for Tablets */
@@ -98,7 +105,7 @@ h1{
   }
 
   .form {
-    width: 50vw;
+    width: 60vw;
     top: 5%;
   }
 
@@ -113,8 +120,10 @@ h1{
   }
 
   .signBtn {
-    width: 15vw;
+    width: 20vw;
+    height: 4vh;
     font-size: 1rem;
+    
   }
 }
 
@@ -197,5 +206,18 @@ h1{
 
   .signBtn:active {
     transform: scale(0.95);
+  }
+}
+
+@media screen and (max-width: 380px){
+
+  .form{
+    margin-top: 4rem;
+    line-height: 0.8;
+  }
+
+  .signNav{
+    margin-bottom: -1rem;
+    margin-top: 1rem;
   }
 }

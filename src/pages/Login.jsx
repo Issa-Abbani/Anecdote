@@ -14,7 +14,7 @@ const forgetPassword = ()=>{
 }
 
 return (
-  <main>
+  <main className={styles.loginCompCont}>
     <Logo />
     {forgot ? (
       <aside className={styles.form}>
