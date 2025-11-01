@@ -1,0 +1,120 @@
+.libraryContainer {
+  width: 60vw;
+  padding-left: 5vw;
+  font-family: "Inter", sans-serif;
+  color: #1a1a1a;
+  text-align: start;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  color: var(--primary-purple);
+}
+
+.subheading {
+  color: #6c6c6c;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Large tablets and smaller laptops (≤ 1024px) */
+@media (max-width: 1024px) {
+  .libraryContainer {
+    width: 70vw;
+    padding-left: 3vw;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .subheading {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablets (≤ 768px) */
+@media (max-width: 768px) {
+  .libraryContainer {
+    width: 55vw;
+    padding-left: 2vw;
+  }
+
+  .heading {
+    font-size: 1.6rem;
+  }
+
+  .subheading {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile devices (≤ 480px) */
+@media (max-width: 480px) {
+  .libraryContainer {
+    width: 90vw;
+    padding: 1rem;
+    text-align: start;
+  }
+
+  .heading {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .subheading {
+    font-size: 0.8rem;
+  }
+
+  .cardsWrapper {
+    gap: 1rem;
+  }
+}
+
+.libraryContainer{
+  margin-left: 20vw;
+}
+
+@media screen and (max-width: 380px){
+  .libraryContainer{
+    margin-left: -8vw;
+  }
+}
+
+@media screen and (min-width: 381px)  and (max-width: 479px){
+  .libraryContainer{
+    margin-left: -8vw;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+  .libraryContainer{
+    margin-left: 30vw;
+  }
+}
+
+@media screen and (min-width: 1500px){
+  .libraryContainer{
+    margin-left: 15vw;
+  }
+}
+
+@media screen and (min-width: 1900px){
+  .libraryContainer{
+    margin-left: 5vw;
+  }
+}
+
+@media screen and (min-width: 2400px){
+  .libraryContainer{
+    margin-left: 0vw;
+  }
+}

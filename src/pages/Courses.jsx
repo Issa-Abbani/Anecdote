@@ -17,7 +17,7 @@ return (
         <button className={course.createBtn}>Create Course</button>
       </header>
 
-      <hr />
+      <hr className={course.subHead} />
 
       <div className={course.grid}>
         {courses.map((course) => (

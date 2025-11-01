@@ -1,0 +1,46 @@
+.card {
+  border: 1px solid var(--primary-purple);
+  border-radius: 12px;
+  padding: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardTitle {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0;
+  color: var(--primary-purple);
+}
+
+.closeButton {
+  background: none;
+  color: var(--primary-purple);
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+
+.closeButton:hover {
+  background: var(--primary-blue);
+  color: white;
+}
+
+.cardText {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.4;
+}

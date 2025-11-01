@@ -1,11 +1,10 @@
 import Sidebar from "../components/Home/Sidebar.jsx";
-import styles from "./Home.module.css";
 import { Outlet } from "react-router-dom";
 function Home(){
   return(
-    <main className={styles.mainCont}>
+    <main>
       <Sidebar />
-      <aside className={styles.tabCont}>
+      <aside>
         <Outlet />
       </aside>
     </main>
